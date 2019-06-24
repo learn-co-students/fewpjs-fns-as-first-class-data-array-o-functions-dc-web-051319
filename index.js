@@ -41,5 +41,5 @@ const routine = [wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog];
 
 
 function exerciseDog(dogName="Error",dogBreed="MissingBreed"){
-    return routine.map(x => x(dogName,dogBreed));
+    return routine.map( func => func(dogName,dogBreed));
 }
